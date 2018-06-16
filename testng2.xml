@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Saibersys">
+ <test name ="Test-NG">
+ <packages>
+ <package name="testNG_Topics"/>
+ </packages>
+ </test>
+</suite> <!-- Suite -->

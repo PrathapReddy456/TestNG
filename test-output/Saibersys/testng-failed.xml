@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Saibersys]">
+  <test thread-count="5" name="Test-NG(failed)">
+    <classes>
+      <class name="testNG_Topics.Products">
+        <methods>
+          <include name="closes"/>
+          <include name="UBs"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testNG_Topics.Products -->
+    </classes>
+  </test> <!-- Test-NG(failed) -->
+</suite> <!-- Failed suite [Saibersys] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testNG_Topics" parallel="tests" thread-count="2" >
+
+<parameter name= "Browser" value="Chrome"/>
+<parameter name="url1" value = "https://google.com"/>
+<parameter name="url2" value= "https://www.freecrm.com"/>
+<parameter name="url3" value= "https://reg.ebay.com/reg/PartialReg?ru=https%3A%2F%2Fwww.ebay.com%2F"/>
+
+<listeners>
+
+<listener class-name="testNG_Topics.Listeners"/>
+<listener class-name="testNG_Topics.AnalyzerTransform"/>
+</listeners>
+
+  <test parallel="classes" thread-count="2" name="testNG_Topics">
+
+  
+   <classes>
+      <class name="testNG_Topics.DataProvider"/>
+      <class name="testNG_Topics.ExcelDataRead"/>
+    <class name="testNG_Topics.Services"/>
+    </classes>
+
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

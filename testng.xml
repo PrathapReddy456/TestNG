@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Saibersys">
+<parameter name ="url" value ="freecrm.com"/>
+  <test thread-count="5" name="example1">
+    <classes>
+      <class name="example1.Practc1"/>
+      
+      <class name="example1.Practic2">
+      <methods>
+      <include name = "maillinktext"/>
+      </methods>
+    </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="testNG_Topics">
+  <classes>
+  		<class name="testNG_Topics.Products"/>
+        <class name="testNG_Topics.Services"/>
+        
+   </classes>
+  </test> 
+ 
+ <test thread-count="5" name="testNG_Topics2">
+  <classes>
+         <class name="testNG_Topics.Solutions">
+         <methods>
+  <exclude name="Supply"/>
+  <exclude name = "testcasename.*"/>
+  </methods>
+  </class>
+   </classes>
+  </test> 
+</suite> <!-- Suite -->

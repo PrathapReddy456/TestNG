@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rivier">
+<parameter name= "Browser" value="Chrome"/>
+<parameter name="url1" value = "https://google.com"/>
+<parameter name="url2" value= "https://www.rivier.edu"/>
+<parameter name="username" value ="naveenk"/>
+<parameter name="password" value ="test@123"/>
+
+  <test thread-count="5" name="testNG_Topics">
+  
+   <classes>
+      <class name="testNG_Topics.Parameterization"/>
+      
+    </classes>
+
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->

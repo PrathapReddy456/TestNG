@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Rivier]">
+  <parameter name="password" value="test@123"/>
+  <parameter name="url1" value="https://google.com"/>
+  <parameter name="url2" value="https://www.rivier.edu"/>
+  <parameter name="Browser" value="Chrome"/>
+  <parameter name="username" value="naveenk"/>
+  <test thread-count="5" name="testNG_Topics">
+    <classes>
+      <class name="testNG_Topics.Parameterization"/>
+    </classes>
+  </test> <!-- testNG_Topics -->
+  <test name="testNG_Topics(failed)">
+    <classes>
+      <class name="testNG_Topics.Parameterization">
+        <methods>
+          <include name="Graduate"/>
+          <include name="Admissions"/>
+          <include name="OnCampus"/>
+          <include name="setup"/>
+          <include name="CarrerDevelopment"/>
+        </methods>
+      </class> <!-- testNG_Topics.Parameterization -->
+    </classes>
+  </test> <!-- testNG_Topics(failed) -->
+</suite> <!-- Failed suite [Rivier] -->
